@@ -6,7 +6,7 @@ class Interpreter {
         var codePointer = 0
 
         while (codePointer < input.length) {
-            when (input[codePointer]) { //[->+<]
+            when (input[codePointer]) {
                 '>' -> pointer++
                 '<' -> pointer--
                 '+' -> memory[pointer]++
